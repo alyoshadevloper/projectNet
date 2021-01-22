@@ -150,7 +150,7 @@ router.get('/product/delete/:id' , (req  ,res) => {
         DbProduct.findOneAndDelete(id , (err) => {
             if(err) console.log(err)
             req.flash('success' , 'Reklamangiz ochirildi')
-            res.redirect('back')
+            res.redirect('/')
         })
     }
         
